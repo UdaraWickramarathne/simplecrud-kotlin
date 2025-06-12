@@ -19,6 +19,7 @@ class DashboardActivity : AppCompatActivity() {
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.nav_home -> replaceFragment(HomeFragment())
+                R.id.nav_schedule -> replaceFragment(AddJobFragment())
             }
             true
         }
