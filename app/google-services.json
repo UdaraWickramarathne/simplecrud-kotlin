@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "774056853366",
+    "firebase_url": "https://simplecrud-49258-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "simplecrud-49258",
+    "storage_bucket": "simplecrud-49258.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774056853366:android:90e5cb57b8f386dbce0457",
+        "android_client_info": {
+          "package_name": "com.udara.simplecrud"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiU4N-Iimv4vWcrFQJL12UFeiURo-8NDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
