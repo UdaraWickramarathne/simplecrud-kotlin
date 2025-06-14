@@ -5,6 +5,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.RecyclerView
 
 class JobAdapter(private val jobList: List<Job>) : RecyclerView.Adapter<JobAdapter.JobViewHolder>() {
@@ -26,14 +28,13 @@ class JobAdapter(private val jobList: List<Job>) : RecyclerView.Adapter<JobAdapt
     override fun onBindViewHolder(holder: JobViewHolder, position: Int) {
         val job = jobList[position]
         
-        holder.jobIcon.setImageResource(job.iconResId)
         holder.jobTitle.text = job.title
         holder.jobType.text = job.type
         holder.jobSalary.text = job.salary
         holder.jobLocation.text = job.location
         
         holder.bookmarkIcon.setOnClickListener {
-            // Handle bookmark click
+            Toast.makeText(holder.itemView.context, "Job bookmarked: ${job.title}", Toast.LENGTH_SHORT).show()
         }
     }
 
